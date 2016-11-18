@@ -15,7 +15,7 @@ stream.once("data", function() {
 	console.log("Started Reading File.");
 	console.log("\n\n\n");
 });
-// add listener on data event then call function(chunk)
+// add listener on data event then call function(chunk) 2^16(65536bits)
 stream.on("data", function(chunk) {
 	process.stdout.write(` chunk: ${chunk.length} |`);
 	data += chunk;
