@@ -22,7 +22,7 @@ rl.question("What is the name of a real person? ", function(answer) {
 			rl.setPrompt(`What else would ${realPerson.name} say? ('exit' to leave) `);
 			rl.prompt();
 		}
-		
+
 	});
 
 });
