@@ -8,5 +8,6 @@ ch09/
 ch10/
 ch11/
 public/
+node_modules/
 *.md
 *.html

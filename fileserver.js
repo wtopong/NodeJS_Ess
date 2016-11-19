@@ -1,3 +1,4 @@
+/* jshint esnext: true */
 var http = require("http");
 var fs = require("fs");
 var path = require("path");
@@ -25,7 +26,7 @@ http.createServer(function(req, res) {
 		imgStream.pipe(res);
 	} else {
 		res.writeHead(400, {"Content-Type": "text/plain"});
-		res.end("404 File Not Found");
+		res.end("404 File Not Found That's Suck!");
 	}
 	
 }).listen(3000);
