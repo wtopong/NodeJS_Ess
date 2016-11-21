@@ -31,8 +31,10 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "cheerio": "^0.22.0",
     "nock": "^9.0.2",
     "rewire": "^2.5.2",
-    "sinon": "^1.17.6"
+    "sinon": "^1.17.6",
+    "supertest": "^2.0.1"
   }
 }
