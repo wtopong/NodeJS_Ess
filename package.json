@@ -32,6 +32,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "cheerio": "^0.22.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
     "nock": "^9.0.2",
     "rewire": "^2.5.2",
     "sinon": "^1.17.6",

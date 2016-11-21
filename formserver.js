@@ -28,7 +28,7 @@ http.createServer(function(req, res) {
 				</html>
 
 			`);
-		})
+		});
 	}
 
 }).listen(3000);

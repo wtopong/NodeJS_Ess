@@ -9,7 +9,7 @@ app.use(express.static("./www3"));
 io.on("connect", function(socket) {
 	socket.on("chat", function(message) {
 		socket.broadcast.emit("message", message);
-	})
+	});
 	socket.emit("message", "Welcome to Cyber Chat");
 });
 
