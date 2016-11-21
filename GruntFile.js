@@ -8,10 +8,27 @@ module.exports = function(grunt) {
 					jQuery: true
 				}
 			}
+		},
+		less: {
+			production: {
+				files: {
+					"public2/css/style.css": ["less/*.less"]
+				}
+			}
+		},
+		autoprefixer: {
+			single_file: {
+				src: "public2/css/style.css",
+				dest: "public2/css/style.css"
+			}
 		}
 	});
 
 	grunt.loadNpmTasks("grunt-contrib-jshint");
+	grunt.loadNpmTasks("grunt-contrib-less");
+	grunt.loadNpmTasks("grunt-autoprefixer");
 
-	grunt.registerTask("default", ["jshint"]);
+	grunt.registerTask("css", ["less", "autoprefixer"]);
+
+	grunt.registerTask("default", ["jshint", "css"]);
 };
